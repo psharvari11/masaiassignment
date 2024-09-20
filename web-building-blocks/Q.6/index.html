@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Types</title>
+    <style>
+      body{
+        font-family: sans-serif;
+        margin:10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width:200px;
+      }
+      label {
+        margin-top:20px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>different input Tags</h1>
+    <form>
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" name="date" />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"placeholder="you@example.com"/>
+      <label for="quantity">Count:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="10" />
+       <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <label for="url">URL:</label>
+      <input type="url" id="url" name="url" />
+      <label for="range">Range:</label>
+      <input type="range" id="range" name="range" min="0" max="500" />
+      <label for="file">Uploading:</label>
+      <input type="file" id="file" name="file" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
