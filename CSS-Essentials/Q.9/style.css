@@ -1,0 +1,76 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.box{
+    border: 3px solid black;
+    width: 28%;
+    height: 600px;
+    margin:10px;
+
+
+}
+.box2{
+    box-shadow:0px 4px 8px rgb(209, 187, 187) ;
+    width:95%;
+    height:450px;
+    margin:auto;
+}
+.title{
+    margin: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family:'san serif','arial';
+}
+.panda{
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Pixelify Sans", sans-serif;
+}
+.image{
+    width:300px;
+}
+
+
+.image1{
+        border-radius: 70%;
+        width:100%;
+        overflow: hidden;
+        margin:10px;
+    }
+    
+.name{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.john{
+    font-size: 24px;
+    font-weight: 700;
+    margin:10px;
+    color: rgb(180, 188, 103);
+    font-family: "Pixelify Sans", sans-serif;
+}
+.cs{
+    font-weight: 500;
+    color:rgb(121, 125, 126)
+}
+.year{
+    font-weight: 600;
+    margin:20px;
+}
+.star{
+    color:black;
+    font-size:1.1em;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+
+
+
+
+
