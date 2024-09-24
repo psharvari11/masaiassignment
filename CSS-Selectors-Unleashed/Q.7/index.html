@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover 3rd box</title>
+    <style>
+      .box{
+        display:flex;
+        justify-content:center;
+        margin-top: 20%;
+      }
+      .box>div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:4px solid black;
+        width:150px;
+        height:150px;
+        font-size:25px;
+      }
+
+      .box div:nth-child(3):hover {
+        width:300px;
+        height: 300px;
+        background-color:rgb(228, 131, 163);
+        transition: 2s ease-in-out;
+        cursor: pointer;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </body>
+</html>
