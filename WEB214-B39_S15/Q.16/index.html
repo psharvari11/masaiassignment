@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tom and Jerry Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        background: linear-gradient(to bottom,rgb(233,81,111), rgb(113,129,161));
+      }
+      .image {
+        position: absolute;
+      }
+      .i1 {
+        animation: Tom 5s infinite linear;
+        mix-blend-mode: multiply;
+      }
+      .i2 {
+        animation:Jerry 5s infinite linear;
+        mix-blend-mode: multiply;
+      }
+
+      @keyframes Tom {
+        0% {
+          left: 50%;
+          filter: blur(5px);
+          transform: translateX(-50%);
+        }
+        25% {
+          left: 75%;
+          filter: blur(0);
+          transform: translateX(-50%);
+        }
+        45% {
+          left: 50%;
+          filter: blur(0);
+          transform: translateX(-50%);
+        }
+        55% {
+          left: 50%;
+          filter: blur(0);
+          transform: translateX(-50%);
+        }
+        70% {
+          left: 25%;
+          filter: blur(0);
+          transform: translateX(-50%);
+        }
+        100% {
+          left: 50%;
+          filter: blur(0);
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes Jerry {
+        0% {
+          right: 50%;
+          filter: blur(5px);
+          transform: translateX(50%);
+        }
+        25% {
+          right: 75%;
+          filter: blur(0);
+          transform: translateX(50%);
+        }
+        45% {
+          right: 50%;
+          filter: blur(0);
+          transform: translateX(50%);
+        }
+        55% {
+          right: 50%;
+          filter: blur(0);
+          transform: translateX(50%);
+        }
+        70% {
+          right: 25%;
+          filter: blur(0);
+          transform: translateX(50%);
+        }
+        100% {
+          right: 50%;
+          filter: blur(5px);
+          transform: translateX(50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image i1">
+        <img src="https://i.pinimg.com/originals/f5/8e/08/f58e08f35089286e44a479fcfe96956e.png" alt="" />
+      </div>
+      <div class="image i2">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
